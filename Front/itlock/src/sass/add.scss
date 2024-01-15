@@ -1,0 +1,31 @@
+.add{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    form{
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+       input{
+        width: 450px;
+        height: 45px;
+        border: 1px solid #003072;
+       }
+       button{
+        width: 160px;
+        height: 50px;
+        border: 1px solid #003072;
+        color:#003072;
+        cursor: pointer;
+        font-weight: bolder;
+        &:hover{
+            background-color: #003072;
+            color: white;
+            border: none;
+        }
+       }
+    }
+}

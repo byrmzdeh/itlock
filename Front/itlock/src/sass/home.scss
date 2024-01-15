@@ -1,0 +1,62 @@
+.home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .four {
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        p{
+            padding-top: 30px;
+            color: #003072;
+        }
+        h1{
+            color: #003072;
+            font-size: 40px;
+        }
+        .cards{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 40px;
+            .card{
+                text-align: center;
+                position: relative;
+                button{
+                    width: 400px;
+                    height: 50px;
+                    top: 220px;
+                    left: 0px;
+                    border: none;
+                    background-color: #003072;
+                    color: white;
+                    position: absolute;
+                    cursor: pointer;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                i{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 22px;
+                    cursor: pointer;
+                    color: #003072;
+                }
+                &:hover{
+                   button{
+                    opacity: 1;
+                   }
+                   
+                }
+            }
+        }
+    }
+}

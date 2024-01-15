@@ -1,0 +1,107 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+
+    .nav{
+        width: 90%;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        .write{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            .now{
+                color: #003072;
+                font-weight: bold;
+            }
+            color: #4C526E;
+        }
+        .icons{
+            width: 13%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i{
+                font-size: 19px;
+                color: #003072;
+                cursor: pointer;
+            }
+        }
+
+    }
+    .head{
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            ul{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                li{
+                    a{
+                        color: #003072;
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                    .active{
+                        color: #051934;
+                        transition: 0.7s;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .listen{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                i{
+                    font-size: 35px;
+                    color: #003072;
+                }
+                .question{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+            button{
+                width: 170px;
+                height: 50px;
+                background-color: white;
+                color: #003072;
+                border: 2px solid #003072;
+                cursor: pointer;
+                font-size: 16px;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #003072;
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
